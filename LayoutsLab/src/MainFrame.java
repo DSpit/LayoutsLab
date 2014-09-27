@@ -3,6 +3,7 @@
 
 import java.awt.Dimension;
 
+import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -48,13 +49,13 @@ public class MainFrame extends JFrame {
 	
 	private void setupContent(){
 		
-		//setup mainPanel
-		mainPanel.setLayout(null);
-		
 		//add panels to the frame
 		mainPanel.add(new Panel1());
 		mainPanel.add(new Panel2());
 		mainPanel.add(new Panel3());
+		
+		//setup mainPanel
+		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 		
 		//set Layout
 		this.setLayout(null);
