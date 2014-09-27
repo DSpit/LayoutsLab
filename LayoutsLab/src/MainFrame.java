@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  * 
  * ------------------------------------------------------------------------
  * 	<br>		Question 2           <br>            
- * 	Add panels to a frame which has the default layout.  <br>
+ * 	Make Panel 1 display 7 radio buttons in a <br>perpendicular design  <br>
  * ------------------------------------------------------------------------
  * 					   
  * @author David Boivin (Spit)
@@ -55,16 +55,15 @@ public class MainFrame extends JFrame {
 	
 	private void setupContent(){
 		
-		//add panels to the frame
-		mainPanel.add(new Panel1());
-		mainPanel.add(new Panel2());
-		mainPanel.add(new Panel3());
-		
 		//setup mainPanel
 		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 		
+		//add panels to the frame
+		mainPanel.add(new Panel1(), 0);
+		mainPanel.add(new Panel2(), 1);
+		mainPanel.add(new Panel3(), 2);
+		
 		//set Layout
-		this.setLayout(null);
 		this.add(mainPanel);
 	}
 	
