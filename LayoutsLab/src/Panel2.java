@@ -4,6 +4,8 @@
 import javax.swing.JPanel;
 
 /**
+ * The second JPanel. Contains all the components that are supposed to be in
+ * the second panel
  *
  * @author David Boivin (Spit)
  */

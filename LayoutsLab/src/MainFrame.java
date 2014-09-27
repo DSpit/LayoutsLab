@@ -6,7 +6,9 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 
 /**
- *
+ * The main window frame, which contains all of the
+ * GUI component.
+ * 					   
  * @author David Boivin (Spit)
  */
 @SuppressWarnings("serial")
