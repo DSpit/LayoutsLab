@@ -41,7 +41,7 @@ public class MainFrame extends JFrame {
 		
 		//finish setting up the main frame variables
 		this.setVisible(true);
-		//this.pack();
+		this.pack();
 	}
 	
 // Private Methods --------------------------------------------------------- //

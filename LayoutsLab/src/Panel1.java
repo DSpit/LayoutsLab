@@ -9,6 +9,7 @@ import javax.swing.JPanel;
  *
  * @author David Boivin (Spit)
  */
+@SuppressWarnings("serial")
 public class Panel1 extends JPanel{
 	
 //Constants --------------------------------------------------------------- //
