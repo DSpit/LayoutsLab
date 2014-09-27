@@ -31,8 +31,6 @@ public class MainFrame extends JFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 		
-		this.setLayout(new BorderLayout(5,5));
-		
 		this.setVisible(true);
 		//this.pack();
 	}
