@@ -3,14 +3,16 @@
 
 import java.awt.Dimension;
 
+import javax.swing.BoxLayout;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  * The main window frame, which contains all of the
  * GUI component.<br><br>
  * 
  * ------------------------------------------------------------------------
- * 	<br>		Question 1           <br>            
+ * 	<br>		Question 2           <br>            
  * 	Add panels to a frame which has the default layout.  <br>
  * ------------------------------------------------------------------------
  * 					   
@@ -27,7 +29,7 @@ public class MainFrame extends JFrame {
 	
 // Members ----------------------------------------------------------------- //
 	
-	
+	private JPanel mainPanel;
 	
 // Constructors ------------------------------------------------------------ //
 	
@@ -41,6 +43,7 @@ public class MainFrame extends JFrame {
 		this.setLocationRelativeTo(null);
 		
 		//setup the frame content
+		mainPanel = new JPanel();
 		this.setupContent();
 		
 		//finish setting up the main frame variables
@@ -52,17 +55,18 @@ public class MainFrame extends JFrame {
 	
 	private void setupContent(){
 		
-		//set Layout
-		//this.setLayout(null);
-		/*
-		 * Default JFrame Layout
-		 */
-		
 		//add panels to the frame
-		this.add(new Panel1());
-		this.add(new Panel2());
-		this.add(new Panel3());
-		}
+		mainPanel.add(new Panel1());
+		mainPanel.add(new Panel2());
+		mainPanel.add(new Panel3());
+		
+		//setup mainPanel
+		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+		
+		//set Layout
+		this.setLayout(null);
+		this.add(mainPanel);
+	}
 	
 // MAIN -------------------------------------------------------------------- //
 	
