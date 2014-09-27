@@ -4,6 +4,7 @@
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  * The main window frame, which contains all of the
@@ -22,7 +23,7 @@ public class MainFrame extends JFrame {
 		
 // Members ----------------------------------------------------------------- //
 	
-	
+	private JPanel mainPanel;
 	
 // Constructors ------------------------------------------------------------ //
 	
@@ -35,6 +36,7 @@ public class MainFrame extends JFrame {
 		this.setLocationRelativeTo(null);
 		
 		//setup the frame content
+		mainPanel = new JPanel();
 		this.setupContent();
 		
 		//finish setting up the main frame variables
@@ -46,13 +48,17 @@ public class MainFrame extends JFrame {
 	
 	private void setupContent(){
 		
-		//set Layout
-		this.setLayout(null);
+		//setup mainPanel
+		mainPanel.setLayout(null);
 		
 		//add panels to the frame
-		this.add(new Panel1());
-		this.add(new Panel2());
-		this.add(new Panel3());
+		mainPanel.add(new Panel1());
+		mainPanel.add(new Panel2());
+		mainPanel.add(new Panel3());
+		
+		//set Layout
+		this.setLayout(null);
+		this.add(mainPanel);
 	}
 	
 // MAIN -------------------------------------------------------------------- //
