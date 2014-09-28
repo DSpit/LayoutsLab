@@ -62,7 +62,7 @@ public class Panel1 extends JPanel{
 	
 //Private Methods --------------------------------------------------------- //
 	
-	public void setupContent(){
+	private void setupContent(){
 		
 		this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 		
