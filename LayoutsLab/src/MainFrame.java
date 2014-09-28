@@ -12,8 +12,9 @@ import javax.swing.JPanel;
  * GUI component.<br><br>
  * 
  * ------------------------------------------------------------------------
- * 	<br>		Question 2           <br>            
- * 	Make Panel 1 display 7 radio buttons in a <br>perpendicular design  <br>
+ * <br>			Question 3           			<br>            
+ * 	Add 4 buttons with the same dimensions and the space 	<br>
+ * 	being the same width as the buttons  			<br>
  * ------------------------------------------------------------------------
  * 					   
  * @author David Boivin (Spit)
