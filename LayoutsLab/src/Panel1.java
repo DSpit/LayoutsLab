@@ -1,6 +1,7 @@
 
 
 
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
@@ -18,14 +19,16 @@ public class Panel1 extends JPanel{
 	
 //Members ----------------------------------------------------------------- //
 	
-	
+	JLabel mTitle;
 	
 //Constructors ------------------------------------------------------------ //
 	
-	public Panel1(){
+	public Panel1(String title){
 		super();
 		
+		mTitle = new JLabel(title);
 		
+		this.add(mTitle);
 	}
 	
 //Private Methods --------------------------------------------------------- //
