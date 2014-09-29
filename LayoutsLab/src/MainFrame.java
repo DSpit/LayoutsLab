@@ -12,9 +12,8 @@ import javax.swing.JPanel;
  * GUI component.<br><br>
  * 
  * ------------------------------------------------------------------------
- * <br>			Question 3           			<br>            
- * 	Add 4 buttons with the same dimensions and the space 	<br>
- * 	being the same width as the buttons  			<br>
+ * <br>			Question 4           			<br>            
+ * 	Yay CardLayouts on Panel3				<br>
  * ------------------------------------------------------------------------
  * 					   
  * @author David Boivin (Spit)
